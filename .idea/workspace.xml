@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc620cfd-9db0-4952-bf14-c7e0d2984c23" name="Default Changelist" comment="some warnings handled">
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/WalletResource.php" afterDir="false" />
+    <list default="true" id="dc620cfd-9db0-4952-bf14-c7e0d2984c23" name="Default Changelist" comment="README.md completed">
+      <change afterPath="$PROJECT_DIR$/PhysicalWallet.postman_collection.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/TransactionResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/TransactionResource.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617794605413</updated>
       <workItem from="1617794606663" duration="387000" />
-      <workItem from="1617795028178" duration="19500000" />
+      <workItem from="1617795028178" duration="21150000" />
     </task>
     <task id="LOCAL-00001" summary="fresh laravel project">
       <created>1617795519348</created>
@@ -246,7 +245,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617813479774</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="README.md completed">
+      <created>1617818584523</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1617818584523</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -265,7 +271,8 @@
     <MESSAGE value="phpDoc on some functions added" />
     <MESSAGE value="rule for safe password validation added" />
     <MESSAGE value="some warnings handled" />
-    <option name="LAST_COMMIT_MESSAGE" value="some warnings handled" />
+    <MESSAGE value="README.md completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="README.md completed" />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="233" key="#Composer" timestamp="1617795036381">
@@ -300,14 +307,14 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="530" y="209" width="383" height="263" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1617795702349" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1617813484768">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1617818589331">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1617813484768" />
-    <state x="450" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617795755127">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1617818589331" />
+    <state x="450" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617818848412">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="450" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1617795755127" />
+    <state x="450" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1617818848412" />
     <state x="443" y="247" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1617795165733">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

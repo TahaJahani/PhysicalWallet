@@ -71,6 +71,7 @@ of transactions performed on the wallet with the given id.
 **Response**: A message saying *Goodbye :)*  
 **Notes**: After logging out, the token will be removed from database and will no longer work for protected routes.
 ## Final Notes
+* Full Postman Collection of routes with examples is available in [this file](PhysicalWallet.postman_collection.json)
 * Since the database and eloquent models does not use `SoftDeletes` trait, every record (such as a wallet ot a token) that
 that is deleted cannot be queried or restored later.
 * The project models and routes are so limited that I did not felt the need to use laravel `Policies` to protect models.

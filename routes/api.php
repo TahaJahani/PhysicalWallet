@@ -33,7 +33,7 @@ Route::prefix('auth')->group(function () {
 //---------------------------------------------------------------------------------
 Route::prefix('wallets')->middleware('auth:sanctum')->group(function () {
     Route::get('/{id?}', [WalletController::class, 'view'])
-        ->whereUuid('id');
+        ->whereNumber('id');
     Route::post('/add', [WalletController::class, 'add']);
     Route::delete('/{id}', [WalletController::class, 'delete'])
         ->whereNumber('id');

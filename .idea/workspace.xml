@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc620cfd-9db0-4952-bf14-c7e0d2984c23" name="Default Changelist" comment="bugs on UserController fixed">
-      <change afterPath="$PROJECT_DIR$/app/Exceptions/WalletNotFoundException.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/TransactionResource.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Resources/WalletCollection.php" afterDir="false" />
+    <list default="true" id="dc620cfd-9db0-4952-bf14-c7e0d2984c23" name="Default Changelist" comment="WalletController implemented">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WalletController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WalletController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Wallet.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Wallet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_07_114358_create_wallets_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_07_114358_create_wallets_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -164,7 +158,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617794605413</updated>
       <workItem from="1617794606663" duration="387000" />
-      <workItem from="1617795028178" duration="11069000" />
+      <workItem from="1617795028178" duration="12483000" />
     </task>
     <task id="LOCAL-00001" summary="fresh laravel project">
       <created>1617795519348</created>
@@ -215,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617799985836</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="WalletController implemented">
+      <created>1617809850559</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1617809850559</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,7 +230,8 @@
     <MESSAGE value="UserController completed" />
     <MESSAGE value="error on mySql resolved" />
     <MESSAGE value="bugs on UserController fixed" />
-    <option name="LAST_COMMIT_MESSAGE" value="bugs on UserController fixed" />
+    <MESSAGE value="WalletController implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value="WalletController implemented" />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="233" key="#Composer" timestamp="1617795036381">
@@ -264,10 +266,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="530" y="209" width="383" height="263" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1617795702349" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1617799995741">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1617809857288">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1617799995741" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1617809857288" />
     <state x="450" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617795755127">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

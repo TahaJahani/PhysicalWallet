@@ -10,6 +10,13 @@ use Illuminate\Support\Facades\Validator;
 
 class UserController extends Controller
 {
+    /**
+     * Given a name, email and password, the function
+     * checks for email duplication and registers the user
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function register (Request $request) {
         $validator = Validator::make($request->all(), [
             'name' => 'required',
@@ -29,6 +36,13 @@ class UserController extends Controller
         return response()->json(['message'=>'کاربر با موفقیت ثبت نام شد']);
     }
 
+    /**
+     * Checks the given email and password, if no problem
+     * occurs, creates a token and returns
+     *
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function login (Request $request) {
         $validator = Validator::make($request->all(), [
             'email' => 'required|email',
@@ -43,6 +57,11 @@ class UserController extends Controller
         return response()->json(['message'=>'خوش آمدید', 'token'=>$token]);
     }
 
+    /**
+     * Logs the user out and removes the saved token
+     *
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function logout (){
         $user = Auth::user();
         $user->currentAccessToken()->delete();

@@ -2,19 +2,50 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Validator;
 
 class UserController extends Controller
 {
     public function register (Request $request) {
-        //TODO: implement
+        $validator = Validator::make($request->all(), [
+            'name' => 'required|alpha',
+            'email' => 'required|email',
+            'password' => 'required|confirmed',
+        ]);
+        if ($validator->fails())
+            return response()->json(['errors'=> $validator->errors()], 400);
+        if (User::where('email', $request->email)->exists())
+            return response()->json(['error' => 'کاربری با این آدرس ایمیل وجود دارد'], 400);
+        //TODO: check for strong password with a validator
+        User::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => Hash::make($request->password)
+        ]);
+        return response()->json(['message'=>'کاربر با موفقیت ثبت نام شد']);
     }
 
     public function login (Request $request) {
-        //TODO: implement
+        $validator = Validator::make($request->all(), [
+            'email' => 'required|email',
+            'password' => 'required'
+        ]);
+        if ($validator->fails())
+            return response()->json(['errors' => $validator->errors()], 400);
+        $user = User::where('email', $request->email)->first();
+        if (is_null($user) || !Hash::check($request->password, $user->password))
+            return response()->json(['error'=>'نام کاربری یا رمز عبور نادرست است'], 403);
+        $token = $user->createToken(now())->plainTextToken;
+        return response()->json(['message'=>'خوش آمدید', 'token'=>$token]);
     }
 
     public function logout (){
-        //TODO: implement
+        $user = Auth::user();
+        $user->currentAccessToken()->delete();
+        return response()->json(['message' => 'خدانگهدار!']);
     }
 }

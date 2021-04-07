@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc620cfd-9db0-4952-bf14-c7e0d2984c23" name="Default Changelist" comment="UserController completed" />
+    <list default="true" id="dc620cfd-9db0-4952-bf14-c7e0d2984c23" name="Default Changelist" comment="error on mySql resolved">
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -155,7 +157,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617794605413</updated>
       <workItem from="1617794606663" duration="387000" />
-      <workItem from="1617795028178" duration="4429000" />
+      <workItem from="1617795028178" duration="4818000" />
     </task>
     <task id="LOCAL-00001" summary="fresh laravel project">
       <created>1617795519348</created>
@@ -192,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617799351182</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="error on mySql resolved">
+      <created>1617799644145</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1617799644145</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -204,13 +213,18 @@
     <MESSAGE value="models and migrations added" />
     <MESSAGE value="initial api routes defined" />
     <MESSAGE value="UserController completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="UserController completed" />
+    <MESSAGE value="error on mySql resolved" />
+    <option name="LAST_COMMIT_MESSAGE" value="error on mySql resolved" />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="233" key="#Composer" timestamp="1617795036381">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="451" y="233" key="#Composer/0.0.1280.680@0.0.1280.680" timestamp="1617795036381" />
+    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1617799558763">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="371" y="96" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1617799558763" />
     <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1617795088504">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

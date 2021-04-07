@@ -12,7 +12,7 @@ class UserController extends Controller
 {
     public function register (Request $request) {
         $validator = Validator::make($request->all(), [
-            'name' => 'required|alpha',
+            'name' => 'required',
             'email' => 'required|email',
             'password' => 'required|confirmed',
         ]);

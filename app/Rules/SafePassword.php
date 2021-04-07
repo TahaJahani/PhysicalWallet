@@ -7,7 +7,7 @@ use Illuminate\Contracts\Validation\Rule;
 class SafePassword implements Rule
 {
 
-    private $message = '';
+    private string $message = '';
 
     /**
      * Determine if the validation rule passes.

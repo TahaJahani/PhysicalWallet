@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Rules\SafePassword;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
@@ -16,7 +17,7 @@ class UserController extends Controller
      * checks for email duplication and registers the user
      *
      * @param Request $request
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
     public function register (Request $request) {
         $validator = Validator::make($request->all(), [
@@ -28,7 +29,6 @@ class UserController extends Controller
             return response()->json(['errors'=> $validator->errors()], 400);
         if (User::where('email', $request->email)->exists())
             return response()->json(['error' => 'کاربری با این آدرس ایمیل وجود دارد'], 400);
-        //TODO: check for strong password with a validator
         User::create([
             'name' => $request->name,
             'email' => $request->email,
@@ -42,7 +42,7 @@ class UserController extends Controller
      * occurs, creates a token and returns
      *
      * @param Request $request
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
     public function login (Request $request) {
         $validator = Validator::make($request->all(), [
@@ -61,7 +61,7 @@ class UserController extends Controller
     /**
      * Logs the user out and removes the saved token
      *
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
     public function logout (){
         $user = Auth::user();

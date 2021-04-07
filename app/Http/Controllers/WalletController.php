@@ -6,6 +6,7 @@ use App\Exceptions\WalletNotFoundException;
 use App\Http\Resources\TransactionResource;
 use App\Http\Resources\WalletCollection;
 use App\Models\Wallet;
+use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
@@ -19,7 +20,7 @@ class WalletController extends Controller
      *
      * @param $id
      * @param Request $request
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      * @throws WalletNotFoundException
      */
     public function makeTransaction ($id, Request $request) {
@@ -81,7 +82,7 @@ class WalletController extends Controller
      * the function deletes the wallet record from database
      *
      * @param $id
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      * @throws WalletNotFoundException
      */
     public function delete ($id) {
@@ -100,7 +101,7 @@ class WalletController extends Controller
      * creates a new wallet for the user with no credit in it
      *
      * @param Request $request
-     * @return \Illuminate\Http\JsonResponse
+     * @return JsonResponse
      */
     public function add (Request $request) {
         $validator = Validator::make($request->all(), [

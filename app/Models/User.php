@@ -7,6 +7,11 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
+/**
+ * @method static where(string $string, $email)
+ * @method static create(array $array)
+ * @method currentAccessToken()
+ */
 class User extends Authenticatable
 {
     use HasFactory, Notifiable, HasApiTokens;

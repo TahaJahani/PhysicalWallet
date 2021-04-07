@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc620cfd-9db0-4952-bf14-c7e0d2984c23" name="Default Changelist" comment="phpDoc on some functions added">
-      <change afterPath="$PROJECT_DIR$/app/Rules/SafePassword.php" afterDir="false" />
+    <list default="true" id="dc620cfd-9db0-4952-bf14-c7e0d2984c23" name="Default Changelist" comment="some warnings handled">
+      <change afterPath="$PROJECT_DIR$/app/Http/Resources/WalletResource.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Resources/TransactionResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/TransactionResource.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +160,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617794605413</updated>
       <workItem from="1617794606663" duration="387000" />
-      <workItem from="1617795028178" duration="14701000" />
+      <workItem from="1617795028178" duration="19500000" />
     </task>
     <task id="LOCAL-00001" summary="fresh laravel project">
       <created>1617795519348</created>
@@ -231,7 +232,21 @@
       <option name="project" value="LOCAL" />
       <updated>1617811843929</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="rule for safe password validation added">
+      <created>1617813217706</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1617813217706</updated>
+    </task>
+    <task id="LOCAL-00012" summary="some warnings handled">
+      <created>1617813479774</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1617813479774</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,7 +263,9 @@
     <MESSAGE value="WalletController implemented" />
     <MESSAGE value="routing logic changed" />
     <MESSAGE value="phpDoc on some functions added" />
-    <option name="LAST_COMMIT_MESSAGE" value="phpDoc on some functions added" />
+    <MESSAGE value="rule for safe password validation added" />
+    <MESSAGE value="some warnings handled" />
+    <option name="LAST_COMMIT_MESSAGE" value="some warnings handled" />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="233" key="#Composer" timestamp="1617795036381">
@@ -283,10 +300,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="530" y="209" width="383" height="263" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1617795702349" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1617811849727">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1617813484768">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1617811849727" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1617813484768" />
     <state x="450" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617795755127">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

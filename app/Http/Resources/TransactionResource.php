@@ -18,7 +18,7 @@ class TransactionResource extends JsonResource
         return [
             'value' => abs($this->value),
             'type' => $this->value > 0 ? 'deposit' : 'receive',
-            'performed_at' => $this->created_at,
+            'performed_at' => $this->created_at->toRfc7231String(),
         ];
     }
 }

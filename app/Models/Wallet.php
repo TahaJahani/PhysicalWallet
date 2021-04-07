@@ -10,8 +10,12 @@ class Wallet extends Model
     use HasFactory;
 
     protected $fillable = [
-        'cash',
+        'name',
+        'type',
+        'value',
     ];
+
+    public static $types = ['credit card', 'cash'];
 
     public function user () {
         return $this->belongsTo(User::class);

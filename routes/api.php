@@ -20,8 +20,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 //---------------------------------------------------------------------------------
-Route::name('login')->get('/', function (){
-    return response()->json(['error'=>'لطفا ابتدا به حساب کاربری خود وارد شوید'], 403);
+Route::name('login')->get('/', function () {
+    return response()->json(['error' => 'لطفا ابتدا به حساب کاربری خود وارد شوید'], 403);
 });
 //---------------------------------------------------------------------------------
 Route::prefix('auth')->group(function () {
@@ -31,11 +31,16 @@ Route::prefix('auth')->group(function () {
         ->middleware('auth:sanctum');
 });
 //---------------------------------------------------------------------------------
-Route::prefix('wallet')->middleware('auth:sanctum')->group(function () {
-    Route::get('/{id?}', [WalletController::class, 'viewAll'])
+Route::prefix('wallets')->middleware('auth:sanctum')->group(function () {
+    Route::get('/{id?}', [WalletController::class, 'view'])
         ->whereUuid('id');
     Route::post('/add', [WalletController::class, 'add']);
     Route::delete('/{id}', [WalletController::class, 'delete'])
-        ->whereUuid('id');
-    Route::post('/make-transaction', [WalletController::class, 'makeTransaction']);
+        ->whereNumber('id');
+    Route::prefix('/transaction')->group(function () {
+        Route::post('/{id}', [WalletController::class, 'makeTransaction'])
+            ->whereNumber('id');
+        Route::get('/{id?}', [WalletController::class, 'getTransactions'])
+            ->whereNumber('id');
+    });
 });

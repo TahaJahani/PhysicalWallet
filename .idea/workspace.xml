@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="dc620cfd-9db0-4952-bf14-c7e0d2984c23" name="Default Changelist" comment="routing logic changed">
+    <list default="true" id="dc620cfd-9db0-4952-bf14-c7e0d2984c23" name="Default Changelist" comment="phpDoc on some functions added">
+      <change afterPath="$PROJECT_DIR$/app/Rules/SafePassword.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/WalletNotFoundException.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/WalletNotFoundException.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WalletController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WalletController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -160,7 +159,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617794605413</updated>
       <workItem from="1617794606663" duration="387000" />
-      <workItem from="1617795028178" duration="13364000" />
+      <workItem from="1617795028178" duration="14701000" />
     </task>
     <task id="LOCAL-00001" summary="fresh laravel project">
       <created>1617795519348</created>
@@ -225,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1617810968646</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="phpDoc on some functions added">
+      <created>1617811843929</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1617811843929</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,7 +247,8 @@
     <MESSAGE value="bugs on UserController fixed" />
     <MESSAGE value="WalletController implemented" />
     <MESSAGE value="routing logic changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="routing logic changed" />
+    <MESSAGE value="phpDoc on some functions added" />
+    <option name="LAST_COMMIT_MESSAGE" value="phpDoc on some functions added" />
   </component>
   <component name="WindowStateProjectService">
     <state x="451" y="233" key="#Composer" timestamp="1617795036381">
@@ -276,10 +283,10 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="530" y="209" width="383" height="263" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1617795702349" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1617810973226">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1617811849727">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1617810973226" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1617811849727" />
     <state x="450" y="255" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1617795755127">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
